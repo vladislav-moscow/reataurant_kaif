@@ -5,15 +5,13 @@ import "./header.css";
 const Header = () => (
   <div className="app__header app__wrapper section__padding" id="home">
     <div className="app__wrapper_info">
-      <SubHeading title="Chase the new flavour" />
-      <h1 className="app__header-h1">The Key To Fine Dining</h1>
+      <SubHeading title="Ищите новый вкус" />
+      <h1 className="app__header-h1">Ключ к изысканной кухне</h1>
       <p className="p__opensans" style={{ margin: "2rem 0" }}>
-        Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
-        morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
-        tellus{" "}
+      Еда состоит в том, чтобы быть счастливым; за столом, где мы, вероятно, проводим наши самые счастливые моменты.{" "}
       </p>
       <button type="button" className="custom__button">
-        Explore Menu
+        Изучить меню
       </button>
     </div>
 

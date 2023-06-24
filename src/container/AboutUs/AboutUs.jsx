@@ -7,20 +7,20 @@ const AboutUs = () => (
     id="about"
   >
     <div className="app__aboutus-overlay flex__center">
-      <img src={images.G} alt="G_overlay" />
+      <img src={images.logo_main} alt="G_overlay" />
     </div>
 
     <div className="app__aboutus-content flex__center">
       <div className="app__aboutus-content_about">
-        <h1 className="headtext__cormorant">About Us</h1>
+        <h1 className="headtext__cormorant">О Нас</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
-          adipiscing ultrices vulputate posuere tristique. In sed odio nec
-          aliquet eu proin mauris et.
+          KAIF PROVENANCE - ИМЕНИТЫЙ РЕСТОРАН, КОТОРЫЙ НАХОДИТСЯ В САМОМ СЕРДЦЕ
+          ИСТОРИЧЕСКОЙ МОСКВЫ. ЭТО КОЛЛАБОРАЦИЯ СТИЛЯ, НЕВЕРОЯТНОГО ВКУСА И
+          ВЫСОКИХ СТАНДАРТОВ СЕРВИСА.
         </p>
         <button type="button" className="custom__button">
-          Know More
+          Узнать больше
         </button>
       </div>
 
@@ -29,15 +29,15 @@ const AboutUs = () => (
       </div>
 
       <div className="app__aboutus-content_history">
-        <h1 className="headtext__cormorant">Our History</h1>
+        <h1 className="headtext__cormorant">Наша история</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans">
-          Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.
-          Risus placerat morbi volutpat habitasse interdum mi aliquam In sed
-          odio nec aliquet.
+          АВТОРСКАЯ КУХНЯ И БЕЗГРАНИЧНАЯ КОЛЛЕКЦИЯ КОКТЕЙЛЕЙ МЕСТО, ГДЕ ИНТЕРЬЕР
+          ПРОРАБОТАН ДО МЕЛОЧЕЙ, РАСТВОРЯЕТ В СВОЕЙ АТМОСФЕРЕ И ОТКРЫВАЕТ ДВЕРЬ
+          В МИР НЕВЕРОЯТНЫХ ВКУСОВ.
         </p>
         <button type="button" className="custom__button">
-          Know More
+          Узнать больше
         </button>
       </div>
     </div>

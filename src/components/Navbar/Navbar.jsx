@@ -11,32 +11,32 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.gericht} alt="app__logo" />
+        <img src={images.logo_main} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
-          <a href="#home">Home</a>
+          <a href="#home">Главная</a>
         </li>
         <li className="p__opensans">
-          <a href="#about">About</a>
+          <a href="#about">О Нас</a>
         </li>
         <li className="p__opensans">
-          <a href="#menu">Menu</a>
+          <a href="#menu">Меню</a>
         </li>
         <li className="p__opensans">
-          <a href="#awards">Awards</a>
+          <a href="#awards">Награды</a>
         </li>
         <li className="p__opensans">
-          <a href="#contact">Contact</a>
+          <a href="#contact">Контакты</a>
         </li>
       </ul>
       <div className="app__navbar-login">
         <a href="#login" className="p__opensans">
-          Log In / Registration
+          Вход / Регистрация
         </a>
         <div />
         <a href="/" className="p__opensans">
-          Book Table
+          Заказ столика
         </a>
       </div>
       <div className="app__navbar-smallscreen">
@@ -55,27 +55,27 @@ const Navbar = () => {
             <ul className="app__navbar-smallscreen_links">
               <li>
                 <a href="#home" onClick={() => setToggleMenu(false)}>
-                  Home
+                  Главная
                 </a>
               </li>
               <li>
                 <a href="#about" onClick={() => setToggleMenu(false)}>
-                  About
+                  О Нас
                 </a>
               </li>
               <li>
                 <a href="#menu" onClick={() => setToggleMenu(false)}>
-                  Menu
+                  Меню
                 </a>
               </li>
               <li>
                 <a href="#awards" onClick={() => setToggleMenu(false)}>
-                  Awards
+                  Награды
                 </a>
               </li>
               <li>
                 <a href="#contact" onClick={() => setToggleMenu(false)}>
-                  Contact
+                  Контакты
                 </a>
               </li>
             </ul>
