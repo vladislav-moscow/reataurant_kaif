@@ -60,23 +60,23 @@ const cocktails = [
 const awards = [
   {
     imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: '«The best in the industry 2023»',
+    subtitle: 'Профессиональная премия заслуженным деятелям ресторанного бизнеса России.',
   },
   {
     imgUrl: images.award01,
-    title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: '«Guest Choice 2022»',
+    subtitle: 'Альтернативный экспертному выбор лучшей ресторанной концепции года.',
   },
   {
     imgUrl: images.award05,
-    title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: '«Wheretoeat Russia 2023»',
+    subtitle: 'Национальная ресторанная премия.',
   },
   {
     imgUrl: images.award03,
-    title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: '«Interior of the year 2018»',
+    subtitle: 'Лучшие интерьеры ресторанов.',
   },
 ];
 

@@ -12,6 +12,13 @@ import "./gallery.css";
 const Gallery = () => {
   const scrollRef = useRef(null);
 
+  const carousel = [
+    images.gallery01,
+    images.gallery02,
+    images.gallery03,
+    images.gallery04,
+  ];
+
   const scroll = (direction) => {
     const { current } = scrollRef;
 
@@ -26,26 +33,21 @@ const Gallery = () => {
     <div className="app__gallery flex__center">
       <div className="app__gallery-content">
         <SubHeading title="Instagram" />
-        <h1 className="headtext__cormorant">Photo Gallery</h1>
+        <h1 className="headtext__cormorant">Фотогалерея</h1>
         <p
           className="p__opensans"
           style={{ color: "#AAAAAA", marginTop: "2rem" }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-          mattis ipsum turpis elit elit scelerisque egestas mu.
+          Фото нашего потрясающего ресторана, где можно увидить как дизайн
+          самого ресторана так и блюд, напитков.
         </p>
         <button type="button" className="custom__button">
-          View More
+          Посмотреть больше
         </button>
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
-          {[
-            images.gallery01,
-            images.gallery02,
-            images.gallery03,
-            images.gallery04,
-          ].map((image, index) => (
+          {carousel.map((image, index) => (
             <div
               className="app__gallery-images_card flex__center"
               key={`gallery_image-${index + 1}`}
