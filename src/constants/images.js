@@ -21,7 +21,8 @@ import award03 from '../assets/award03.png';
 import award05 from '../assets/award05.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
-import menuu from '../assets/Menu.pdf'
+import menuu from '../assets/Menu.pdf';
+import video from '../assets/videoKaif.mp4'
 
 export default {
   bg,
@@ -47,5 +48,6 @@ export default {
   logo_main,
   K,
   menuu,
+  video,
 };
 

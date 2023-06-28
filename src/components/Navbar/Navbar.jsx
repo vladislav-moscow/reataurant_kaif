@@ -5,6 +5,7 @@ import { MdOutlineRestaurantMenu } from "react-icons/md";
 
 import images from "../../constants/images";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -14,15 +15,20 @@ const Navbar = () => {
         <img src={images.logo_main} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
-        <li className="p__opensans">
-          <a href="#home">Главная</a>
-        </li>
+        <Link to={`/`}>
+          <li className="p__opensans">
+            <a href="#home">Главная</a>
+          </li>
+        </Link>
+
         <li className="p__opensans">
           <a href="#about">О Нас</a>
         </li>
-        <li className="p__opensans">
-          <a href="#menu">Меню</a>
-        </li>
+        <Link to={`/menu`}>
+          <li className="p__opensans">
+            <a href="#menu">Меню</a>
+          </li>
+        </Link>
         <li className="p__opensans">
           <a href="#awards">Награды</a>
         </li>

@@ -1,5 +1,8 @@
+import { Link } from "react-router-dom";
+
 import { SubHeading } from "../../components";
 import images from "../../constants/images";
+
 import "./header.css";
 
 const Header = () => (
@@ -8,11 +11,14 @@ const Header = () => (
       <SubHeading title="Ищите новый вкус" />
       <h1 className="app__header-h1">Ключ к изысканной кухне</h1>
       <p className="p__opensans" style={{ margin: "2rem 0" }}>
-      Еда состоит в том, чтобы быть счастливым; за столом, где мы, вероятно, проводим наши самые счастливые моменты.{" "}
+        Еда состоит в том, чтобы быть счастливым; за столом, где мы, вероятно,
+        проводим наши самые счастливые моменты.{" "}
       </p>
-      <button type="button" className="custom__button">
-        Изучить меню
-      </button>
+      <Link to={`/menu`}>
+        <button type="button" className="custom__button">
+          Изучить меню
+        </button>
+      </Link>
     </div>
 
     <div className="app__wrapper_img">

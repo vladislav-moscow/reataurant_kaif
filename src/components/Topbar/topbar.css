@@ -1,0 +1,36 @@
+.topbar {
+  position: relative;
+}
+
+.video {
+  width: 100vw;
+  left: 0;
+  top: 0;
+  background: var(--color-black);
+  position: relative;
+}
+
+.videoBackground {
+  background-position: center center;
+}
+
+.videoBackground > video {
+  object-fit: cover;
+  background-size: cover;
+  width: 100vw;
+  height: calc(100vh - 88px);
+}
+
+.topbar__links {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 250px;
+  font-family: var(--font-alt);
+  color: var(--color-white);
+  list-style: none;
+  font-size: 20px;
+  line-height: 1.55;
+}
