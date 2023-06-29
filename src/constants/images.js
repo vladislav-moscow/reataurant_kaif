@@ -22,7 +22,9 @@ import award05 from '../assets/award05.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import menuu from '../assets/Menu.pdf';
-import video from '../assets/videoKaif.mp4'
+import video from '../assets/videoKaif.mp4';
+
+
 
 export default {
   bg,

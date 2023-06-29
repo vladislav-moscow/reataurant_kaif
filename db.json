@@ -1,0 +1,64 @@
+{
+  "titleMenu": [
+    {
+      "id": 1,
+      "title": "Завтрак",
+      "image": "https://myfoodblog.com.au/wp-content/uploads/2017/06/french-toast-with-berries_7417RESIZED.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Закуски",
+      "image": "https://almode.ru/uploads/posts/2021-12/1640614292_16-almode-ru-p-restorannie-zakuski-18.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Салаты",
+      "image": "https://i1.wp.com/antennadaily.ru/wp-content/uploads/2021/03/image-03-03-21-12-13.jpeg?resize=1120%2C1680&ssl=1"
+    },
+    {
+      "id": 1,
+      "title": "Супы",
+      "image": "https://postila.ru/data/03/4f/a4/f8/034fa4f8733cf35987176cfd2e173f888be9099b0e2d8235a9b6bf2941b81190.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Горячее",
+      "image": "https://i.pinimg.com/originals/98/68/46/986846598bd778ae516bddbbf8edd832.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Пицца",
+      "image": "https://www.mediahacker.org/wp-content/uploads/2018/05/Pizza-Restaurant.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Гарниры",
+      "image": "https://get.pxhere.com/photo/dish-cuisine-food-ingredient-meat-fried-food-produce-mixed-grill-steak-la-carte-food-meat-chop-recipe-comfort-food-pork-steak-side-dish-meal-teriyaki-rib-eye-steak-Steak-au-poivre-grilling-garnish-roasting-grillades-pork-chop-mediterranean-food-1615745.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Азия",
+      "image": "https://podacha-blud.com/uploads/posts/2022-10/1665571964_21-podacha-blud-com-p-fud-foto-rollov-24.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Десерты",
+      "image": "https://mykaleidoscope.ru/uploads/posts/2020-03/1583418147_18-p-deserti-v-restoranakh-41.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Напитки",
+      "image": "https://i.pinimg.com/originals/c6/b9/01/c6b901371901cf299b67f9a3998a2a50.jpg"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
