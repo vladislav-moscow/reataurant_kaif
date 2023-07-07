@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { Navbar } from "../../components";
-import Topbar from "../../components/Topbar/Topbar";
-import { Footer } from "../../container";
-import images from "../../constants/images";
-import axios from "axios";
-import MenuItemMain from "../../components/Menuitem/MenuItemMain";
+import React, { useEffect, useState } from 'react'
+import { Navbar } from '../../components'
+import { images } from '../../constants'
+import Topbar from '../../components/Topbar/Topbar'
+import MenuItemMain from '../../components/Menuitem/MenuItemMain'
+import axios from 'axios'
+import { Footer } from '../../container'
 
-const Breakfast = () => {
+const Snacks = () => {
   const [data, setData] = useState([]);
-  const [breakfast, setBreakfast] = useState([])
+  const [snacks, setSnacks] = useState([])
 
   useEffect(() => {
     axios.get("http://localhost:3001/titleMenu").then((res) => {
@@ -18,12 +18,11 @@ const Breakfast = () => {
 
   useEffect(() => {
     axios.get("http://localhost:3001/breakfast").then((res) => {
-      setBreakfast(res.data);
+      setSnacks(res.data);
     });
   }, []);
   return (
-    <>
-      <div className="app__menu">
+    <div className="app__menu">
         <Navbar />
         <div className="app__menu-topbar">
           <div className="topbar__video">
@@ -35,15 +34,14 @@ const Breakfast = () => {
           </div>
           <Topbar data={data} />
           <div className="menuItem__cart">
-            {breakfast.map((item) => (
+            {snacks.map((item) => (
             <MenuItemMain data={item} key={item.id}/>
           ))}
           </div>
         </div>
         <Footer />
       </div>
-    </>
-  );
-};
+  )
+}
 
-export default Breakfast;
+export default Snacks

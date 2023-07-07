@@ -1,0 +1,22 @@
+.menuItem {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: var(--color-white);
+}
+
+.menuItem-img {
+  width: 232px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.menuItem-title {
+  width: 232px;
+  font-size: 1rem;
+}
+
+.menuItem-price {
+  margin-top: 10px;
+  font-size: 14px;
+  float: right;
+}
