@@ -1,11 +1,14 @@
-import './menuMain.css'
-import { Navbar } from "../../components";
-import Topbar from "../../components/Topbar/Topbar";
-import { Footer } from '../../container';
 import { useEffect, useState } from "react";
-import MenuTitle from "../../components/Menuitem/MenuTitle";
 import axios from 'axios';
+
 import images from "../../constants/images";
+
+import './menuMain.css';
+
+import { Footer } from '../../container';
+import { Navbar } from "../../components";
+import MenuTitle from "../../components/Menuitem/MenuTitle";
+import Topbar from "../../components/Topbar/Topbar";
 
 
 const MenuMain = () => {
@@ -16,6 +19,7 @@ const MenuMain = () => {
       setData(res.data);
     });
   }, []);
+
   return (
     <div className="app__menu">
       <Navbar />
@@ -27,7 +31,7 @@ const MenuMain = () => {
               </video>
             </div>
           </div>
-          <Topbar data = {data} />
+          <Topbar />
           <MenuTitle data = {data} />
         </div>
       

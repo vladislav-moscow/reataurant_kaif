@@ -1,9 +1,18 @@
-import { Link } from "react-router-dom";
-import "./topbar.css";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
-const Topbar = ({ data }) => {
+import "./topbar.css";
+
+const Topbar = () => {
   const navigate = useNavigate();
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:3001/titleMenu").then((res) => {
+      setData(res.data);
+    });
+  }, []);
 
   const navigateClick = (e) => {
     e.preventDefault();
@@ -12,12 +21,10 @@ const Topbar = ({ data }) => {
 
   return (
     <nav className="topbar__links">
-      <div className="links">
+      <div className="topbar__links-box">
         {data.map((elem) => (
           <li key={elem.title}>
-            
-            <h3 type="submit" onClick={navigateClick} title={elem.subTitle}>{elem.title}</h3>
-            
+            <h3 className="topbar__links-link" type="submit" onClick={navigateClick} title={elem.subTitle}>{elem.title}</h3>
           </li>
         ))}
       </div>

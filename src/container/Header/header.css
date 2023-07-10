@@ -10,6 +10,7 @@
   text-transform: capitalize;
   line-height: 100px;
   font-size: 90px;
+  overflow-y: hidden;
 }
 
 .app__header-img img {

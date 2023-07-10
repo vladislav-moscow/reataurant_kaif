@@ -8,19 +8,13 @@ import MenuItemMain from "../../components/Menuitem/MenuItemMain";
 
 const Breakfast = () => {
   const [data, setData] = useState([]);
-  const [breakfast, setBreakfast] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:3001/titleMenu").then((res) => {
+    axios.get("http://localhost:3001/breakfast").then((res) => {
       setData(res.data);
     });
   }, []);
 
-  useEffect(() => {
-    axios.get("http://localhost:3001/breakfast").then((res) => {
-      setBreakfast(res.data);
-    });
-  }, []);
   return (
     <>
       <div className="app__menu">
@@ -33,11 +27,12 @@ const Breakfast = () => {
               </video>
             </div>
           </div>
-          <Topbar data={data} />
+          <Topbar />
+          <h3 className="app__menu-title">Завтраки</h3>
           <div className="menuItem__cart">
-            {breakfast.map((item) => (
-            <MenuItemMain data={item} key={item.id}/>
-          ))}
+            {data.map((item) => (
+              <MenuItemMain data={item} key={item.id} />
+            ))}
           </div>
         </div>
         <Footer />

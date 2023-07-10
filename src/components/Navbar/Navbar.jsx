@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
 
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -17,7 +18,7 @@ const Navbar = () => {
       <ul className="app__navbar-links">
         <Link to={`/`}>
           <li className="p__opensans">
-            <a href="#home">Главная</a>
+            <a>Главная</a>
           </li>
         </Link>
 
@@ -26,7 +27,7 @@ const Navbar = () => {
         </li>
         <Link to={`/menu`}>
           <li className="p__opensans">
-            <a href="#menu">Меню</a>
+            <a>Меню</a>
           </li>
         </Link>
         <li className="p__opensans">

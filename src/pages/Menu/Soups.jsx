@@ -8,11 +8,11 @@ import { images } from '../../constants';
 import Topbar from '../../components/Topbar/Topbar';
 import MenuItemMain from '../../components/Menuitem/MenuItemMain';
 
-const Snacks = () => {
+const Soups = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/snacks").then((res) => {
+    axios.get("http://localhost:3001/soups").then((res) => {
       setData(res.data);
     });
   }, []);
@@ -30,7 +30,7 @@ const Snacks = () => {
             </div>
           </div>
           <Topbar data={data} />
-          <h3 className="app__menu-title">Закуски</h3>
+          <h3 className="app__menu-title">Супы</h3>
           <div className="menuItem__cart">
             {data.map((item) => (
             <MenuItemMain data={item} key={item.id}/>
@@ -42,4 +42,4 @@ const Snacks = () => {
   )
 }
 
-export default Snacks
+export default Soups
